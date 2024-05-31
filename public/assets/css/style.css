@@ -114,7 +114,13 @@ h2,
 .ts-h2 {
   font-size: 1.5rem;
 }
-
+#contactWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contactWrapper .col-sm-6.col-md-3.mb-4 {
+  display: block;
+}
 h3,
 .ts-h3 {
   font-size: 1.25rem;

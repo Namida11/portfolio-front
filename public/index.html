@@ -22,6 +22,11 @@
       rel="stylesheet"
       href="assets/font-awesome/css/fontawesome-all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
@@ -87,15 +92,11 @@
         <!--end container-->
       </nav>
       <!--end navbar-->
-      <!--*********************************************************************************************************-->
-      <!--************ HERO ***************************************************************************************-->
-      <!--*********************************************************************************************************-->
+
       <div id="ts-hero" class="ts-animate-hero-items">
-        <!--HERO CONTENT ****************************************************************************************-->
         <div class="container position-relative h-100 ts-align__vertical">
           <div class="row w-100">
             <div class="col-md-8">
-              <!--SOCIAL ICONS-->
               <figure class="ts-social-icons mb-4">
                 <a href="#" class="mr-3">
                   <i class="fab fa-facebook"></i>
@@ -115,12 +116,12 @@
               </figure>
 
               <!--TITLE -->
-              <h1>I am Jonathan Doe</h1>
+              <h1 id="name">I am</h1>
               <h1 class="ts-bubble-border">
-                <span class="ts-title-rotate">
-                  <span class="active">Designer</span>
+                <span id="titles" class="ts-title-rotate">
+                  <!-- <span class="active">Designer</span>
                   <span>Photographer</span>
-                  <span>Creative Person</span>
+                  <span>Creative Person</span> -->
                 </span>
               </h1>
             </div>
@@ -144,10 +145,7 @@
 
         <!--HERO BACKGROUND *************************************************************************************-->
         <div class="ts-background">
-          <div
-            class="ts-background-image"
-            data-bg-image="assets/img/bg-hero.jpg"
-          ></div>
+          <div id="heroBg" class="ts-background-image" data-bg-image=""></div>
         </div>
         <!--END HERO BACKGROUND *********************************************************************************-->
       </div>
@@ -343,63 +341,7 @@
             <div class="ts-title text-center">
               <h2 class="ts-bubble-border">Get In Touch</h2>
             </div>
-            <div class="row ts-xs-text-center">
-              <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp">
-                <img src="assets/img/icon-pin.png" class="mb-4" alt="" />
-                <h5>Address</h5>
-                <div class="ts-opacity__50">
-                  <figure class="mb-0">999 Carter Street</figure>
-                  <figure>Sailor Springs, IL 62434</figure>
-                </div>
-                <!--end ts-opacity__50-->
-              </div>
-              <!--end col-md-3-->
-              <div
-                class="col-sm-6 col-md-3 mb-4"
-                data-animate="ts-fadeInUp"
-                data-delay=".1s"
-              >
-                <img src="assets/img/icon-phone-02.png" class="mb-4" alt="" />
-                <h5>Phone</h5>
-                <div class="ts-opacity__50">
-                  <figure class="mb-0">+1 618-689-9409</figure>
-                  <figure>+1 781-254-8437</figure>
-                </div>
-                <!--end ts-opacity__50-->
-              </div>
-              <!--end col-md-3-->
-              <div
-                class="col-sm-6 col-md-3 mb-4"
-                data-animate="ts-fadeInUp"
-                data-delay=".2s"
-              >
-                <img src="assets/img/icon-envelope.png" class="mb-4" alt="" />
-                <h5>Email</h5>
-                <div class="ts-opacity__50">
-                  <figure class="mb-0">hello@example.com</figure>
-                  <figure>support@example.com</figure>
-                </div>
-                <!--end ts-opacity__50-->
-              </div>
-              <!--end col-md-3-->
-              <div
-                class="col-sm-6 col-md-3 mb-4"
-                data-animate="ts-fadeInUp"
-                data-delay=".3s"
-              >
-                <img
-                  src="assets/img/icon-talk-bubble.png"
-                  class="mb-4"
-                  alt=""
-                />
-                <h5>Facebook Chat</h5>
-                <div class="ts-opacity__50">
-                  <figure>me.freelancer3</figure>
-                </div>
-                <!--end ts-opacity__50-->
-              </div>
-              <!--end col-md-3-->
-            </div>
+            <div class="row ts-xs-text-center" id="contactWrapper"></div>
             <!--end row-->
 
             <div class="pt-5">
@@ -563,6 +505,7 @@
           </div>
         </div>
       </footer>
+
       <!--end #footer-->
     </div>
     <!--end page-->

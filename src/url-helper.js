@@ -11,4 +11,6 @@ export const APPLICATION_ENDPOINT = "application/getall";
 
 export const APPLICATION_CREATE_ENDPOINT = "application/create";
 
+export const CONTACT_ENDPOINT = "contact/getall";
+
 // export const PORTFOLIO_CREATE_ENDPOINT = "portfolio/create";
